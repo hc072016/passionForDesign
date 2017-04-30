@@ -1,0 +1,62 @@
+body {
+  font-family:      Georgia;
+  font-style:          italic;
+  background-color: #252525;
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+h1, h2 {
+  color:         gray;
+}
+
+h1 {
+  font-family:      "Brush Script MT";
+  border-bottom: 1px solid black;
+}
+
+#back {
+	position:	fixed;
+	top:	50%;
+	margin-top:	-279px;
+	left:	50%;
+	margin-left:	-348px;
+	z-index:	0;
+}
+
+#container{
+	position:	fixed;
+	top:	50%;
+	margin-top:	-20px;
+	left:	50%;
+	margin-left:	-287px;
+	z-index:	1;
+	height:	202px;
+	width:	575px;
+}
+
+#front {
+	position:	absolute;
+	z-index:	1;
+}
+
+#blue {
+	position:	absolute;
+	top:	-45px;
+	left:	7%;
+	z-index:	0;
+}
+
+#red {
+	position: absolute;
+    top: -98px;
+    left: 29%;
+    z-index:	0;
+}
+
+#green {
+	position: absolute;
+    top: -60px;
+    left: 66%;
+    z-index:	0;
+}

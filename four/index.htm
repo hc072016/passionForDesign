@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>Leaves RGB</title>
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen"/>
+	<script type="text/javascript" src="jquery.js"></script>	
+	<script type="text/javascript">
+	
+	function mOver(obj) {
+		switch("#"+obj.id) {
+			case '#red':
+				$(obj).animate({'top': '+=70px'}, 2000);
+				break;
+			case '#green':
+				$(obj).animate({'top': '-=60px'}, 1000);
+				break;
+			case '#blue':
+				$(obj).animate({'top': '-=50px'}, 'slow');
+				break;
+			default:
+		}
+	}
+	
+	function mOut(obj) {
+		switch("#"+obj.id) {
+			case '#red':
+				$(obj).animate({'top': '-=70px'}, 2000);
+				break;
+			case '#green':
+				$(obj).animate({'top': '+=60px'}, 1000);
+				break;
+			case '#blue':
+				$(obj).animate({'top': '+=50px'}, 'slow');
+				break;
+			default:
+		}
+	}
+
+	</script>
+	
+	</head>
+	<body>
+    <h1>Leaves</h1>
+<!-- <h2><a id = "my" onmouseover = "blue()">test...</a></h2> -->
+	<div id="back">
+		<img src="images/back.png"/>
+	</div>
+	<div id="container">
+		<div id="blue" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="images/blue.png" />
+		</div>
+		<div id="red" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="images/red.png" />
+		</div>
+		<div id="green" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="images/green.png" />
+		</div>
+		<div id="front">
+			<img src="images/front.png" />
+		</div>
+	</div>
+	</body>
+</html>
